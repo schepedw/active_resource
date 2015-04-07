@@ -26,6 +26,14 @@ This is the API to be used by [Active Resource Client]
 I intend to use this for several different exercises: look at the
 exercise readme for details
 
+## Testing
+
+If you really feel the need, you can test this project using `be rspec`.
+Make sure your test db is set up first.
+
+At the time of writing, these tests did not provide complete code
+coverage.
+
 ## Resources
 
 [Rails Routing](http://guides.rubyonrails.org/routing.html)
