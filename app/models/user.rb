@@ -1,10 +1,10 @@
+# id         | integer           | not null default nextval('users_id_seq'::regclass)
+# first_name | character varying |
+# last_name  | character varying |
+# ssn        | integer           | not null
+# login      | character varying | not null
+# address_id | integer           |
+
 class User < ActiveRecord::Base
-  has_many :accounts
   has_one :address
-  def as_json
-    {
-      class: 'user',
-      id: id
-    }
-  end
 end
