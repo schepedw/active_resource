@@ -1,8 +1,8 @@
 default: &default
-  host: localhost
   adapter: postgresql
   encoding: unicode
   username: weekly_workshop
+  password:
 
 development:
   <<: *default
