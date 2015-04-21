@@ -1,4 +1,4 @@
-# Active Resource 101
+# Active Resource 102
 
 This is the API to be used by [Active Resource Client]
 (https://github.com/schepedw/active_resource_client.git)
@@ -30,36 +30,27 @@ model](https://github.com/schepedw/active_resource_client#active-resource-101),
 but what about our responses?
 
 In a similar way to our endpoints, we _can_ make our responses whatever we
-feel like (see (AccountType)[#TODO]). However, when someone else wants to use our API, it would be
-nice if they could expect some structure. This is where (JSON
-API)[jsonapi.org] comes in.
+feel like (see [AccountType](https://github.com/schepedw/active_resource/blob/json_api/app/models/account_type.rb)). However, when someone else wants to use our API, it would be
+nice if they could expect some structure. This is where [JSON
+API](jsonapi.org) comes in.
 
 JSON API, as you may have guessed, is a standard for building APIs
 in JSON. Like many standards, it's really boring to read through.
 Thankfully, there are gems have done most of the heavy lifting for
 us, and we don't have to read or do much to get our API up to snuff. One
-of these gems is (Active
-Serializer)[https://github.com/rails-api/active_model_serializers],
+of these gems is [Active
+Serializer](https://github.com/rails-api/active_model_serializers),
 which I recommend for this exercise.
 
 ## Requirements
-Make stuff gooder. Make sure to not break the tests in the client
-
- #TODO - where is the correct place to put the tests?
-
-## Testing
-
-If you really feel the need, you can test this project using `be rspec`.
-Make sure your test db is set up first.
-
-At the time of writing, these tests did not provide complete code
-coverage.
+Run the tests, watch them fail, make some pass, repeat. I highly recommend perusing [Active Model
+Serializers](https://github.com/rails-api/active_model_serializers) first.
 
 ## Resources
 
-[JSON API](http://jsonapi.org/format/)
-[JSON API + ActiveSerializer Rails
+* [JSON API](http://jsonapi.org/format/)
+* [JSON API + ActiveSerializer Rails
 Cast](http://railscasts.com/episodes/409-active-model-serializers?view=asciicast)
-[Active Model
+* [Active Model
 Serializers](https://github.com/rails-api/active_model_serializers)
-[Rails Routing](http://guides.rubyonrails.org/routing.html)
+* [Rails Routing](http://guides.rubyonrails.org/routing.html)
