@@ -21,10 +21,31 @@ This is the API to be used by [Active Resource Client]
 }
 ```
 
-## Requirements
+## The lesson
 
-I intend to use this for several different exercises: look at the
-exercise readme for details
+We can write our API to have all sorts of endpoints and responses,
+especially if we write the client as well. We
+previously looked at a way to [structure our endpoints using active
+model](https://github.com/schepedw/active_resource_client#active-resource-101),
+but what about our responses?
+
+In a similar way to our endpoints, we _can_ make our responses whatever we
+feel like (see (AccountType)[#TODO]). However, when someone else wants to use our API, it would be
+nice if they could expect some structure. This is where (JSON
+API)[jsonapi.org] comes in.
+
+JSON API, as you may have guessed, is a standard for building APIs
+in JSON. Like many standards, it's really boring to read through.
+Thankfully, there are gems have done most of the heavy lifting for
+us, and we don't have to read or do much to get our API up to snuff. One
+of these gems is (Active
+Serializer)[https://github.com/rails-api/active_model_serializers],
+which I recommend for this exercise.
+
+## Requirements
+Make stuff gooder. Make sure to not break the tests in the client
+
+ #TODO - where is the correct place to put the tests?
 
 ## Testing
 
