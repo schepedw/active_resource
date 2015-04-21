@@ -9,13 +9,4 @@
 class Account < ActiveRecord::Base
   belongs_to :bank
   belongs_to :user
-  #TODO: remove as_json
-  def as_json(options = {})
-    {
-      id: id,
-      user_id: user_id,
-      bank_id: bank_id,
-      balance: balance
-    }
-  end
 end

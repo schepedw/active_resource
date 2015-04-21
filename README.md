@@ -57,4 +57,9 @@ coverage.
 
 ## Resources
 
+[JSON API](http://jsonapi.org/format/)
+[JSON API + ActiveSerializer Rails
+Cast](http://railscasts.com/episodes/409-active-model-serializers?view=asciicast)
+[Active Model
+Serializers](https://github.com/rails-api/active_model_serializers)
 [Rails Routing](http://guides.rubyonrails.org/routing.html)

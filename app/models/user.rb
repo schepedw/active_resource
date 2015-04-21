@@ -6,5 +6,5 @@
 # address_id | integer           |
 
 class User < ActiveRecord::Base
-  has_one :address
+  belongs_to :address
 end

@@ -4,5 +4,5 @@
 # address_id | integer                     |
 
 class Bank < ActiveRecord::Base
-  has_one :address
+  belongs_to :address
 end
